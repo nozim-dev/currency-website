@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  --font-Roboto: "Roboto";
+}
+
+.container {
+  width: 100%;
+  max-width: 1340px;
+  margin: auto;
+}
+.all_currency {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+}
+.all_currency_item {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.all_currency_item:hover {
+  background-color: azure;
+}
+.all_currency_item_image {
+  width: 100%;
+  max-width: 55px;
+  height: 35px;
+  border: 1px solid gray;
+}
+.all_currency_item_image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.all_currency_item_text > h1 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.84);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.all_currency_item_text > h1 > p {
+  font-weight: 400;
+  margin: 0;
+}
+.all_currency_item_text > h4 {
+  font-weight: 400;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #eb5757;
+  /* #219653 */
+  margin: 0;
+  margin-top: 12px;
+}
+.all_currency_item_icon {
+  width: 24px;
+  height: 24px;
+}
+.all_currency_item_icon > img {
+  width: 100%;
+  height: 100%;
+}
+.currency_calculator {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+}
+.currency_from {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.currency_to {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.container > h1 {
+  text-align: center;
+}
+.container_main {
+  background-color: #f0f5ff;
+  padding-top: 22px;
+  margin-top: 66px;
+}
+.container_main > h1 {
+  font-family: var(--font-Roboto);
+  font-weight: bold;
+  line-height: 60px;
+  font-size: 60px;
+  color: #1a1a1a;
+  text-align: center;
+}
+.container_main > p {
+  font-family: var(--font-Roboto);
+  font-weight: 400;
+  line-height: 42px;
+  font-size: 16px;
+  color: #1a1a1a;
+  text-align: center;
+}
+.currency_box {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+  margin: auto;
+  background-color: #fff;
+  padding: 31px 40px 40px;
+  box-shadow: 0 20px 50px 2px rgba(26, 26, 26, 0.1);
+  transform: translateY(30%);
+}
+.currency_box > h1 {
+  font-family: var(--font-Roboto);
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #1a1a1a;
+  max-width: 654px;
+  text-align: center;
+  margin: auto;
+}
+.currency_box > p {
+  font-family: var(--font-Roboto);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #1a1a1a;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+}
+.currency_calculator {
+  margin-top: 30px;
+  gap: 25px;
+}
+.currency_from {
+  width: 100%;
+  max-width: 370px;
+  border: 1px solid #c6c6c6;
+  justify-content: space-between;
+  align-items: center;
+}
+.currency_calculator_currInp > input {
+  border: none;
+  outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.currency_to {
+  border: 1px solid #c6c6c6;
+  max-width: 370px;
+}
+#FromSelect {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding-left: 56px;
+}
+#toSelect {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding-left: 56px;
+}
+.currency_calculator_currText {
+  position: relative;
+  padding: 20px 0;
+  padding-right: 20px;
+}
+.currency_calculator_currText::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #c6c6c6;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.currency_calculator_currInp {
+  padding: 20px 0 20px 20px;
+}
+input {
+  width: 100%;
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--font-Roboto);
+}
+.icon {
+  width: 22px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#FromSelect > option {
+  font-family: var(--font-Roboto);
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+#toSelect > option {
+  font-family: var(--font-Roboto);
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
